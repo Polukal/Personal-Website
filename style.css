@@ -494,7 +494,7 @@ nav {
 .section__title {
   text-align: center;
   font-size: 48px;
-  margin-bottom: 60px;
+  margin-bottom: 60px; 
 }
 
 .project {
@@ -631,6 +631,7 @@ footer {
 */
 .shape {
   position: fixed;
+ 
 }
 .shape--0 {
   top: 15vh;
