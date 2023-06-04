@@ -62,7 +62,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-  border-color: #f06449;
+  border-color: #5D3FD3;
 }
 
 .container {
@@ -98,7 +98,7 @@ input:focus, textarea:focus {
 }
 
 .orange {
-  color: #f06449 !important;
+  color: #5D3FD3 !important;
 }
 
 .link__hover-effect {
@@ -134,6 +134,7 @@ nav,
   opacity: 1;
   visibility: visible;
   transition: all 600ms 800ms;
+  z-index: 1;
 }
 
 .modal--open nav,
@@ -179,6 +180,20 @@ nav,
   min-height: 100vh;
 }
 
+.profile_pic{
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile_pic_container{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   position: absolute;
   top: 50%;
@@ -187,6 +202,18 @@ nav,
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+}
+
+.header__content{
+  display: flex;
+}
+
+.header__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 112px;
 }
 
 .header__para {
@@ -201,7 +228,7 @@ nav,
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: #5D3FD3;
   color: white;
   padding: 6px;
   width: 32px;
@@ -412,8 +439,8 @@ nav {
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #5D3FD3;
+  border: 2px solid #5D3FD3;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -429,8 +456,8 @@ nav {
 }
 
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: #5D3FD3;
+  color: #5D3FD3;
 }
 
 .modal__overlay {
@@ -491,10 +518,15 @@ nav {
   
 */
 
+#projects{
+  z-index: 1;
+}
+
 .section__title {
   text-align: center;
   font-size: 48px;
   margin-bottom: 60px; 
+  z-index: 1;
 }
 
 .project {
@@ -710,6 +742,25 @@ footer {
   .modal__half {
     width: 100%;
   }
+  .profile_pic_container{
+    width: 70%;
+    margin: auto;
+  }
+  .profile_pic{
+    margin-bottom: 64px;
+  }
+  .header__content{
+    flex-direction: column;
+  }
+  .header__right{
+    padding-bottom: 64px;
+    padding-top: 32px;
+    position: inherit;
+  }
+  .header{
+    padding-top: 128px;
+    margin-bottom: 64px;
+  }
 }
 
 /* Small phones */
@@ -737,5 +788,14 @@ footer {
   }
   .modal__half {
     padding: 40px;
+  }
+  .profile_pic_container{
+    margin-bottom: 64px;
+  }
+  .header{
+    margin-top: 88px;
+  }
+  .scroll{
+    display: none;
   }
 }

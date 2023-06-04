@@ -57,26 +57,34 @@
     </nav>
     <header class="header">
       <div class="header__content">
-        <h1 class="title">Hey</h1>
-        <h1 class="title orange">I'm Ömer.    </h1>
-        <p class="header__para">
-          I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web applications
-          with great user
-          experiences.
-          <br>
-          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
-        </p>
-        <div class="social__list">
-          <a href="https://www.linkedin.com/in/%C3%B6mer-meralo%C4%9Flu-09858b207/" target="_blank" class="social__link click">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/Polukal" target="_blank" class="social__link click">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://github.com/Polukal/Personal-Website/blob/master/assets/Resume.pdf" target="_blank" class="social__link click">
-            <i class="fas fa-file-pdf"></i>
-          </a>
+        <div class="header__left">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Ömer.    </h1>
+          <p class="header__para">
+            I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web applications
+            with great user
+            experiences.
+            <br>
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a href="https://www.linkedin.com/in/%C3%B6mer-meralo%C4%9Flu-09858b207/" target="_blank" class="social__link click">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Polukal" target="_blank" class="social__link click">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="./assets/Resume.pdf" target="_blank" class="social__link click">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
         </div>
+        <div class="header__right">
+          <div class="profile_pic_container">
+            <img class="profile_pic" src="./assets/me.jpg" alt="">
+          </div>
+        </div>
+
       </div>
     </header>
     <a href="#">
@@ -174,6 +182,31 @@
           Here are some of my <span class="orange">projects</span>
         </h1>
         <ul class="project__list">
+          
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/offershop_mockup.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Offershop Website
+                </h3>
+                <h4 class="project__description--sub-title">
+                  React, Next.js, Sass, Html, CSS, Javascript
+                </h4>
+                <p class="project__description--para">
+                  OfferShop.io is a modern, user-friendly website built with Next.js for optimal performance and SEO. It features clean, responsive design thanks to Sass, CSS3, and HTML5. 
+                  JavaScript ensures interactivity across the site, including a dynamic blog section. The result is a sleek, engaging platform offering a seamless user experience.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://offershop.io/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <li class="project">
             <div class="project__wrapper">
               <img src="./assets/book_store_mockup.png" class="project__img" alt="">
@@ -199,6 +232,7 @@
             </div>
           </li>
 
+          
           <li class="project">
             <div class="project__wrapper">
               <img src="./assets/find_your_movie_mockup.jpg" class="project__img" alt="">
@@ -248,34 +282,6 @@
             </div>
           </li>
 
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/TodoApp.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Todo App
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, Javascript, React.
-                </h4>
-                <p class="project__description--para">
-                  This problem solver app gives you the ability to quickly write down tasks to do and then you can delete
-                  completed tasks, add new ones or delete specific tasks. I benefited greatly from Reacts tools such as 
-                  useState. Write down your tasks and take them by storm.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://todo-app-nine-smoky.vercel.app/" target="_blank" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          
-
-         
         </ul>
       </div>
     </div>
@@ -314,7 +320,7 @@
         ">
             Contact
           </a>
-          <a href="https://github.com/Polukal/Personal-Website/blob/master/assets/Resume.pdf" target= "_blank" class="
+          <a href="./assets/Resume.pdf" target= "_blank" class="
           footer__social--link
           link__hover-effect
           link__hover-effect--white
@@ -322,7 +328,7 @@
             Resume
           </a>
         </div>
-        <div class="footer__copyright">Copyright &copy; 2021 Ömer Meraloğlu</div>
+        <div class="footer__copyright">Copyright &copy; 2023 Ömer Meraloğlu</div>
       </div>
     </div>
   </footer>
