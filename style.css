@@ -633,6 +633,10 @@ footer {
   margin: 28px 0;
 }
 
+.contracts{
+  max-width: 100%;
+}
+
 .footer__social--link,
 .footer__copyright {
   color: white;
